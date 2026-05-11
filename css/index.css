@@ -1,0 +1,420 @@
+#hero-section {
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin:0;
+  top:0%;
+  background-size: cover;
+  transition: background-position 0.3s ease; 
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../img/Migrante en Finlandia.webp');
+  background-size: cover;
+  background-position: center 25%;
+  transition: transform 0.1s ease; 
+}
+
+#hero-section .parallax-bg {
+  /* Increased contrast between text and background */
+  filter:brightness(0.9);
+}
+
+#hero-section h1 {
+  margin-top: 60px;
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+#hero-section p {
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 20px;
+  font-style: italic;
+  
+}
+@media (max-width: 768px) {
+  #hero-section {
+    margin: 0;
+  }
+}
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media screen and (max-width: 900px) {
+  #hero-secction{
+    margin: 0;
+  }
+  #hero-section h1 {
+    font-size: 34px; /* Tamaño de fuente deseado para pantallas pequeñas */
+    margin: 10px;
+  }
+  #hero-section p {
+  font-size: 17px;
+  margin: 10px;
+ }
+}
+
+/* Estilos para la sección "about-section" */
+#about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* The styles below are to limit the width, this helps the layout in very wide monitors */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-container {
+  text-align: center;
+  margin: 0 40px;
+}
+
+.about-image {
+  width: 330px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text-container {
+  text-align: center;
+  margin: 0 40px;
+  overflow: hidden; 
+}
+
+.about-title {
+  font-size: 84px;
+  color: #c8658c;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+}
+
+.about-text {
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 828px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+/* Estilos para questions section*/
+#questions-section {
+  background-image: linear-gradient(#1b1717c5,#040404aa),url('../img/dafne  atardecer.webp');
+  background-size: cover;
+  padding:1em;
+  margin: 2em auto;
+}
+#questions-section h2 {
+  text-align:center;
+  margin: 1.5em auto;
+}
+#questions-section .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+}
+@media screen and (max-width: 500px) {
+  #questions-section .wrapper {
+    display: block;
+  }
+}
+#questions-section .wrapper > ul {
+  flex-basis: 300px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#questions-section button {
+  margin: 2em auto;
+  display: block;
+}
+
+#questions-section li {
+  margin: 25px auto;
+  font-weight:lighter;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Estilos para service section*/
+#service-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-panel {
+  flex: 1;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.service-panel:hover {
+  transform: scale(1.1);
+}
+
+.service-image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-panel:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+}
+
+.service-panel:hover .service-text {
+  opacity: 1;
+}
+
+.service-text p {
+  margin: 0;
+}
+
+.service-link {
+  display: block;
+  margin-top: 10px;
+  font-style:inherit;
+  color: #ff7bb0;
+  text-decoration:none;
+  transition: color 0.3s ease, box-shadow 0.3s ease; /* Transición de color y sombreado */
+}
+
+.service-link:hover {
+  color: #ff3366;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreado al pasar el ratón */
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-panel {
+    margin: 15px 0;
+    padding: 0px;
+    overflow: hidden;
+    flex-basis: 100%;
+    transform: none;
+  }
+
+  .service-title {
+  font-size: 34px;
+
+}
+
+  .service-image {
+    padding-bottom: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-text {
+    position: absolute;
+    bottom: 0; /* Colocar el texto en la parte inferior */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-weight: bold;
+    opacity: 1;
+  }
+
+  .service-link {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #ff7bb0;
+  }
+}
+.service-panel {
+  margin: 10px 0;
+  flex-basis: 100%; /* Ocupar todo el ancho en una columna */
+}
+
+#testimonials-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#1b17178a,#04040498), url('../img/flores dafne.webp');
+  background-size: cover;
+  z-index: -1;
+}
+
+.testimonials-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials-container h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-content p {
+  text-align: justify;
+  color:#333;
+}
+
+.testimonial-info {
+  margin-top: 20px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-style: italic;
+  color: #419ac0;
+}
+
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .testimonials-container h2 {
+    font-size: 30px; 
+    margin-bottom: 20px; 
+  }
+
+  .testimonial-card {
+    margin-bottom: 30px; 
+  }
+}
+
+
+
+
+#citas-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#ffffff6f, #ffffff5b), url('../img/Agenda.webp');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.citas-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.79);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 80px auto;
+  color:#333;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.citas-content h2 {
+  font-size: 60px;
+  
+}

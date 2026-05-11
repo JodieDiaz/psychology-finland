@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Psychology Finland ofrece atención psicológica accesible para migrantes en Finlandia. Servicios en español e inglés.">
+    <meta name="keywords" content="psicología, Finlandia, migrantes, terapia online, español, inglés, duelo migratorio">
+    <meta name="author" content="Dafne Jalomo">
+    <meta property="og:title" content="Psychology Finland - Atención Psicológica para Migrantes">
+    <meta property="og:description" content="Juntos transformamos tu experiencia en una fortaleza">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psychologyfinland.com">
+
+    <title>Psychology Finland - Atención Psicológica para Migrantes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Funnel+Sans:wght@300;400;500&family=Lora:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-symbol-v2.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <img src="img/logo-symbol-v2.png" alt="Psychology Finland Logo" class="header-logo-icon">
+                <img src="img/logo-text-transparent.png" alt="Psychology Finland" class="header-logo-text">
+            </a>
+            <nav class="nav" id="mainNav">
+                <a href="#" data-es="Inicio" data-en="Home">Inicio</a>
+                <a href="about.html" data-es="Más sobre mi" data-en=" More about me">Más sobre mi</a>
+                <div class="nav-dropdown">
+                    <a href="#services" data-es="Servicios" data-en="Services">Servicios</a>
+                    <div class="dropdown-menu">
+                        <a href="terapia.html" data-es="Terapia" data-en="Therapy">Terapia</a>
+                        <a href="consejeria.html" data-es="Consejería en temas migratorios"
+                            data-en="Migration Counseling">Consejería en temas migratorios</a>
+                    </div>
+                </div>
+                <a href="citas.html" data-es="Citas" data-en="Appointments">Citas</a>
+                <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+            </nav>
+            <div class="language-switcher">
+                <input type="radio" name="lang" id="lang-es" value="es" checked hidden>
+                <input type="radio" name="lang" id="lang-en" value="en" hidden>
+                <label for="lang-es" class="lang-btn active" data-lang="es">🇪🇸 ES</label>
+                <span class="separator">|</span>
+                <label for="lang-en" class="lang-btn" data-lang="en">🇬🇧 EN</label>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <video autoplay muted loop playsinline loading="eager">
+                <source src="videos/flor_animada.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-es="&ldquo;Juntos convertimos tu experiencia en fortaleza &rdquo;"
+                data-en="&ldquo;Together, we transform your experiences into strengths &rdquo;">
+                &ldquo;Juntos convertimos tu experiencia en fortaleza &rdquo;
+            </h1>
+            <p class="hero-subtitle" data-es="Te acompaño a reconocer tus recursos y avanzar hacia tu bienestar"
+                data-en="I support you in recognizing your resources and moving toward greater well-being.">
+                Te acompaño a reconocer tus recursos y avanzar hacia tu bienestar
+            </p>
+            <a href="#about" class="cta-button">
+                <span data-es="Leer más" data-en="Read more">Leer más</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="img/DJalomo_330.webp" alt="Dafne Jalomo - Psychologist" class="about-image">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" data-es="Psic. Dafne Jalomo" data-en="Psychologist Dafne Jalomo">Psic.
+                        Dafne Jalomo</h2>
+
+                    <div class="about-text" data-es="visible" data-en="hidden">
+                        <p>A través de Psychology Finland, ofrezco apoyo psicológico y consejería accesible, a personas
+                            que atraviesan distintos momentos de la vida, como procesos de adaptación, dificultades en
+                            las relaciones interpersonales, crisis emocionales, duelo y transiciones vitales, entre
+                            otros desafíos.</p>
+
+                        <p>Trabajo desde un enfoque flexible, ajustado a las necesidades de cada persona y de cada caso.
+                            Las sesiones se realizan en línea, en español e inglés, en un espacio seguro y confidencial.
+                        </p>
+
+                        <p>Mi práctica integra formación profesional en salud mental con mi experiencia personal como
+                            mujer migrante, lo que me permite ofrecer un acompañamiento empático y ético.</p>
+
+                        <p>Mi objetivo es que quienes buscan apoyo se sientan comprendidos y obtengan claridad y
+                            seguridad para dar pasos concretos hacia su bienestar.</p>
+
+                        <p>Cuento con licencia profesional como psicóloga en Finlandia,
+                            <strong><em>otorgada por Lupa- ja valvontavirasto, la autoridad finlandesa
+                                    de supervisión sanitaria y social (anteriormente Valvira). </em></strong>
+                        </p>
+
+                        <ul>
+                            <li><strong>Maestra en Ciencias Sociales (Psicología Social)</strong> — Universidad de
+                                Helsinki, Finlandia | 2019–2021
+                            </li>
+
+                            <li><strong>Licenciada en Psicología</strong> — Universidad de Guadalajara, México |
+                                2004–2009
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-text" data-es="hidden" data-en="visible">
+                        <p>Through Psychology Finland, I provide accessible psychological support and counseling to
+                            individuals navigating different stages of life, such as adaptation processes, difficulties
+                            in interpersonal relationships, emotional crises, grief, and life transitions, among other
+                            challenges.</p>
+
+                        <p>I work from a flexible approach, tailored to the needs of each individual and each case.
+                            Sessions are conducted online, in Spanish and English, in a safe and confidential space.</p>
+
+                        <p>My practice integrates professional training in mental health with my personal experience as
+                            a migrant woman, allowing me to offer empathetic and ethical support.</p>
+
+                        <p>My goal is for those seeking support to feel understood and to gain clarity and a sense of
+                            security to take concrete steps toward their well-being.</p>
+
+                        <p>I am a licensed psychologist in Finland,
+                            <strong><em>registered with Lupa- ja valvontavirasto, the Finnish supervisory authority
+                                    for health and social welfare (formerly Valvira).</em></strong>
+                        </p>
+
+                        <ul>
+                            <li><strong>Master of Social Sciences (Social Psychology)</strong> — University of Helsinki,
+                                Finland | 2019–2021
+                            </li>
+
+                            <li><strong>Bachelor’s Degree in Psychology</strong> — University of Guadalajara, Mexico |
+                                2004–2009
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-cta-container">
+                <a href="about.html" class="cta-button">
+                    <span data-es="Más sobre mi" data-en="More about me">Más sobre mi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title centered" data-es="Servicios" data-en="Services">Servicios</h2>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/Boterapia.png" alt="Terapia" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-es="Terapia" data-en="Therapy">Terapia Individual</h3>
+                        <p data-es="Explora tus emociones, comprende tus patrones y avanza con claridad y acompañamiento profesional."
+                            data-en="Explore your emotions, understand your patterns, and move forward with clarity and support. ">
+                            Explora tus emociones, comprende tus patrones y avanza con claridad y acompañamiento
+                            profesional.
+                        </p>
+                        <a href="terapia.html" class="cta-button service-btn">
+                            <span data-es="Leer más..." data-en="Read more...">Leer más...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/heroconsuling.png" alt="Consejería en temas migratorios" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-es="Consejería en temas migratorios" data-en="Migration Counseling">
+                            Consejería en temas migratorios</h3>
+                        <p data-es="Planifica tu mudanza o recibe acompañamiento para adaptarte a tu nueva vida en el extranjero, con apoyo práctico y emocional. "
+                            data-en="Plan your move and navigate the adaptation to your new life abroad with practical guidance and emotional support.">
+                            Planifica tu mudanza o recibe acompañamiento para adaptarte a tu nueva vida en el
+                            extranjero, con apoyo práctico y emocional.
+                        </p>
+                        <a href="consejeria.html" class="cta-button service-btn">
+                            <span data-es="Leer más..." data-en="Read more...">Leer más...</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title centered" data-es="Hablemos" data-en="Get in touch">Hablemos</h2>
+
+            <div class="contact-intro">
+                <p data-es="Me pondré en contacto contigo a la brevedad posible para responder tus dudas o coordinar una sesión. Todas las comunicaciones se manejan con confidencialidad y respeto."
+                    data-en="I will get back to you as soon as possible to answer your questions or schedule a session. All communications are handled with confidentiality and respect.">
+                    Me pondré en contacto contigo a la brevedad posible para responder tus dudas o coordinar una sesión.
+                    Todas las comunicaciones se manejan con confidencialidad y respeto.
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+                <form action="mailto:psic.dafnejalomo@gmail.com" method="post" enctype="text/plain"
+                    class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-es="Nombre" data-en="Name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-es="Correo electrónico" data-en="Email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-es="Asunto" data-en="Subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-es="Mensaje" data-en="Message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button submit-btn">
+                        <span data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-brand-container">
+                        <img src="img/logo-symbol-v2.png" alt="Psychology Finland Logo" class="footer-logo-icon">
+                        <img src="img/logo-text-transparent.png" alt="Psychology Finland" class="footer-logo-text">
+                    </div>
+                    <p data-es="&quot;Juntos transformamos tu experiencia en una fortaleza.&quot;"
+                        data-en="&quot;Together we transform your experience into strengths.&quot;">
+                        "Juntos transformamos tu experiencia en una fortaleza.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <p>Email: <a href="mailto:psic.dafnejalomo@gmail.com">psic.dafnejalomo@gmail.com</a></p>
+                    <p data-es="Licencia profesional otorgada por la autoridad finlandesa de supervisión sanitaria y social (Lupa- ja valvontavirasto)."
+                        data-en="Professional license granted by the Finnish supervisory authority for health and social welfare (Lupa- ja valvontavirasto).">
+                        Licencia profesional otorgada por la autoridad finlandesa de supervisión sanitaria y social (Lupa- ja valvontavirasto).
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-es="Sígueme" data-en="Follow Me">Sígueme</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Psic.Finlandia" aria-label="Facebook" target="_blank">
+                            <img src="img/icono-facebook.webp" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/psicologaenfinlandia/" aria-label="Instagram"
+                            target="_blank">
+                            <img src="img/icono-intagram.webp" alt="Instagram">
+                        </a>
+                        <a href="https://t.me/Dafne_ps" aria-label="Telegram" target="_blank">
+                            <img src="img/icono-telegram.webp" alt="Telegram">
+                        </a>
+                        <a href="mailto:psic.dafnejalomo@gmail.com" aria-label="Email">
+                            <img src="img/icono-email.webp" alt="Email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Psychology Finland. <span data-es="Todos los derechos reservados."
+                        data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/Dafne_ps" class="floating-telegram" target="_blank" rel="noopener"
+        aria-label="Contact on Telegram">
+        <img src="img/icono-telegram.webp" alt="Telegram">
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

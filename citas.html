@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Psychology Finland ofrece atención psicológica accesible para migrantes en Finlandia. Servicios en español e inglés.">
+    <meta name="keywords" content="psicología, Finlandia, migrantes, terapia online, español, inglés, duelo migratorio">
+    <meta name="author" content="Dafne Jalomo">
+    <meta property="og:title" content="Psychology Finland - Atención Psicológica para Migrantes">
+    <meta property="og:description" content="Juntos transformamos tu experiencia en una fortaleza">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psychologyfinland.com">
+
+    <title>Psychology Finland - Citas / Appointments</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Funnel+Sans:wght@300;400;500&family=Lora:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-symbol-v2.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <img src="img/logo-symbol-v2.png" alt="Psychology Finland Logo" class="header-logo-icon">
+                <img src="img/logo-text-transparent.png" alt="Psychology Finland" class="header-logo-text">
+            </a>
+            <nav class="nav" id="mainNav">
+                <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+                <a href="about.html" data-es="Más sobre mi" data-en="More about me">Más sobre mi</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#services" data-es="Servicios" data-en="Services">Servicios</a>
+                    <div class="dropdown-menu">
+                        <a href="terapia.html" data-es="Terapia" data-en="Therapy">Terapia</a>
+                        <a href="consejeria.html" data-es="Consejería en temas migratorios"
+                            data-en="Migration Counseling">Consejería en temas migratorios</a>
+                    </div>
+                </div>
+                <a href="citas.html" data-es="Citas" data-en="Appointments" class="active">Citas</a>
+                <a href="index.html#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+            </nav>
+            <div class="language-switcher">
+                <input type="radio" name="lang" id="lang-es" value="es" checked hidden>
+                <input type="radio" name="lang" id="lang-en" value="en" hidden>
+                <label for="lang-es" class="lang-btn active" data-lang="es">🇪🇸 ES</label>
+                <span class="separator">|</span>
+                <label for="lang-en" class="lang-btn" data-lang="en">🇬🇧 EN</label>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="citas-section" style="padding: 120px 20px; text-align: center; min-height: 70vh; display: flex; align-items: center; justify-content: center; background-color: var(--color-sand);">
+        <div class="container fade-in" style="max-width: 800px; background: var(--color-white); padding: var(--spacing-xxl); border-radius: var(--radius-md); box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+            <div data-es="visible" data-en="hidden">
+                <h1 style="color: var(--color-slate); font-family: 'Playfair Display', serif; margin-bottom: var(--spacing-lg); font-size: 2.5rem;">Citas</h1>
+                <p style="font-size: 1.15rem; color: var(--color-slate); line-height: 1.6; margin-bottom: var(--spacing-xl);">Haz clic en el botón de abajo para reservar tu cita. Completa el formulario y selecciona el tipo de servicio que requieres. Si tienes dudas, consulta la sección de servicios o envíame un mensaje.</p>
+                <a href="https://psicdafnejalomo.youcanbook.me/" class="cta-button" target="_blank" rel="noopener" style="display: inline-block;">Agendar cita</a>
+            </div>
+
+            <div data-es="hidden" data-en="visible">
+                <h1 style="color: var(--color-slate); font-family: 'Playfair Display', serif; margin-bottom: var(--spacing-lg); font-size: 2.5rem;">Appointment</h1>
+                <p style="font-size: 1.15rem; color: var(--color-slate); line-height: 1.6; margin-bottom: var(--spacing-xl);">Click the button below to book your appointment. Fill out the form and select the type of service you need. If you have any questions, please check the services section or send me a message.</p>
+                <a href="https://psicdafnejalomo.youcanbook.me/" class="cta-button" target="_blank" rel="noopener" style="display: inline-block;">Make an appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-brand-container">
+                        <img src="img/logo-symbol-v2.png" alt="Psychology Finland Logo" class="footer-logo-icon">
+                        <img src="img/logo-text-transparent.png" alt="Psychology Finland" class="footer-logo-text">
+                    </div>
+                    <p data-es="&quot;Juntos transformamos tu experiencia en una fortaleza.&quot;"
+                        data-en="&quot;Together we transform your experience into strengths.&quot;">
+                        "Juntos transformamos tu experiencia en una fortaleza."
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <p>Email: <a href="mailto:psic.dafnejalomo@gmail.com">psic.dafnejalomo@gmail.com</a></p>
+                    <p data-es="Licencia profesional otorgada por la autoridad finlandesa de supervisión sanitaria y social (Lupa- ja valvontavirasto)."
+                        data-en="Professional license granted by the Finnish supervisory authority for health and social welfare (Lupa- ja valvontavirasto).">
+                        Licencia profesional otorgada por la autoridad finlandesa de supervisión sanitaria y social (Lupa- ja valvontavirasto).
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-es="Sígueme" data-en="Follow Me">Sígueme</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Psic.Finlandia" aria-label="Facebook" target="_blank">
+                            <img src="img/icono-facebook.webp" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/psicologaenfinlandia/" aria-label="Instagram"
+                            target="_blank">
+                            <img src="img/icono-intagram.webp" alt="Instagram">
+                        </a>
+                        <a href="https://t.me/Dafne_ps" aria-label="Telegram" target="_blank">
+                            <img src="img/icono-telegram.webp" alt="Telegram">
+                        </a>
+                        <a href="mailto:psic.dafnejalomo@gmail.com" aria-label="Email">
+                            <img src="img/icono-email.webp" alt="Email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Psychology Finland. <span data-es="Todos los derechos reservados."
+                        data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/Dafne_ps" class="floating-telegram" target="_blank" rel="noopener"
+        aria-label="Contact on Telegram">
+        <img src="img/icono-telegram.webp" alt="Telegram">
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

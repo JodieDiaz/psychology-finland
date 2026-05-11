@@ -1,0 +1,47 @@
+
+.banner-container {
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner-container img {
+  width: 100%;
+  display: block;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-text h2 {
+  font-size: 60px; 
+  margin: 0; 
+  padding: 10px; /* Agrega un espaciado alrededor del texto */
+  background-color: rgba(212, 161, 179, 0.602);
+  display: inline-block;
+}
+
+.formulario-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+  .banner-text h2 {
+  font-size: 36px; 
+  margin-top: 20px;
+}
+  /* Ajusta el ancho del formulario */
+  iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] {
+    width: 60%; 
+  }
+}
+
+

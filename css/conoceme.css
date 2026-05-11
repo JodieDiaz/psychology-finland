@@ -1,0 +1,138 @@
+/* Estilos para la sección "Conóceme" */
+#conoceme-section {
+  position: relative;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.conoceme-title {
+  font-size: 60px;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .conoceme-title {
+  font-size: 34px;
+}
+}
+
+/* Estilos para la sección "Experiencia de Dafne" */
+#experiencia-section {
+  background-color: #ffffff;
+  color: #333;
+  padding: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+#experiencia-section button {
+  margin-bottom: 0;
+  margin-top: 20px;
+  display: block;
+}
+
+.experiencia-container {
+  max-width: 1000px;
+  display: flex; 
+  justify-content: space-between; /* Espacio entre las dos columnas */
+  align-items: center; /* Centra verticalmente en las dos columnas */
+}
+
+.foto-dafne {
+  flex: 1; /* La foto ocupará 1 parte del espacio disponible */
+  margin-right: 20px; /* Espacio entre la foto y el texto en pantalla grande */
+}
+
+.foto-dafne img {
+  width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.introduccion {
+  flex: 1; /* El texto ocupará 1 parte del espacio disponible */
+  text-align: justify; /* Alinea el texto a la izquierda */
+  margin-bottom: 30px;
+}
+
+.introduccion h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .introduccion h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; 
+    letter-spacing: 1px;
+  }
+}
+
+.introduccion p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+/* Estilos para pantallas pequeñas (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+  .experiencia-container {
+    flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    align-items: center; /* Centra verticalmente el contenido en columnas */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .foto-dafne {
+    margin-right: 0; 
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para la sección "Mi historia" */
+#mi-historia-section {
+  position: relative;
+  height: auto;
+  padding: 50px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.625),rgba(0, 0, 0, 0.526)), url("../img/Copia de 2021-10-20 09.18.02.webp");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mi-historia-title {
+  padding: 10px 20px;
+}
+
+.mi-historia-title h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mi-historia-texto {
+  border-radius: 8px;
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+ .mi-historia-title h2 {
+  font-size: 34px;
+}
+}

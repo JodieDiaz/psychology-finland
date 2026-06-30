@@ -285,7 +285,8 @@
             </div>
 
             <div class="contact-form-container">
-                <form action="https://formsubmit.co/psic.dafnejalomo@gmail.com" method="POST" class="contact-form">
+                <form action="https://formsubmit.co/psic.dafnejalomo@gmail.com" method="POST" class="contact-form"
+                    onsubmit="event.preventDefault(); document.getElementById('confirmationOverlay').style.display = 'flex'; setTimeout(() => { this.submit(); }, 4000);">
 
                     <input type="hidden" name="_subject" value="Nuevo mensaje desde psychologyfinland.com">
                     <input type="hidden" name="_captcha" value="false">
@@ -311,54 +312,48 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
-                    <button type="submit" class="cta-button submit-btn"
-                        onclick="document.getElementById('successOverlay').style.display = 'flex';">
+                    <button type="submit" class="cta-button submit-btn">
                         <span data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</span>
                     </button>
                 </form>
             </div>
         </div>
 
-        <div id="successOverlay"
-            style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100%; height: 100%; background: radial-gradient(circle, #1a2f2b 0%, #0d1a17 100%); align-items: center; justify-content: center; flex-direction: column; animation: fadeInOverlay 0.4s ease forwards;">
-            <div
-                style="position: relative; text-align: center; width: 100%; max-width: 500px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div id="confirmationOverlay"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10000; justify-content: center; align-items: center; backdrop-filter: blur(4px);">
 
-                <iframe src="https://www.cosmos.so/e/1006894269"
-                    style="width: 100%; height: 280px; border: none; pointer-events: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); mix-blend-mode: screen; opacity: 0.85;"
-                    allow="autoplay"></iframe>
+            <div
+                style="background: linear-gradient(135deg, #d8bef3 0%, #a5c7f3 100%); max-width: 480px; width: 85%; border-radius: 16px; padding: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; animation: popIn 0.3s ease-out;">
 
                 <div
-                    style="position: relative; z-index: 2; width: 90px; height: 90px; background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px rgba(34, 197, 94, 0.5); animation: scaleCheck 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;">
-                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                    style="width: 100%; height: 260px; border-radius: 12px; overflow: hidden; background-color: #000; position: relative;">
+
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: contain;">
+                        <source src="videos/cosmos_1006894269.mp4" type="video/mp4">
+                    </video>
+
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; width: 80px; height: 80px; background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 25px rgba(34, 197, 94, 0.6);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
                 </div>
 
             </div>
         </div>
 
         <style>
-            @keyframes fadeInOverlay {
+            @keyframes popIn {
                 from {
+                    transform: scale(0.85);
                     opacity: 0;
                 }
 
                 to {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes scaleCheck {
-                from {
-                    transform: scale(0);
-                    box-shadow: 0 0 0px rgba(34, 197, 94, 0);
-                }
-
-                to {
                     transform: scale(1);
-                    box-shadow: 0 0 30px rgba(34, 197, 94, 0.5);
+                    opacity: 1;
                 }
             }
         </style>
